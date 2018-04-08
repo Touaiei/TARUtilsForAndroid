@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by TAR on 2017/11/7.
  */
 
-public class TARBaseActivity extends AppCompatActivity {
+public class TARBaseActivity222222 extends AppCompatActivity {
 
     /*
     * 初始化导航栏
