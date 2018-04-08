@@ -1,27 +1,43 @@
-package com.huanwei.TARUtils.TARBaseKit;
+package com.tar.ronghuibaoforandroid.TARUtilsForAndroid.TARBaseKit;
 
+import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.tar.ronghuibaoforandroid.TARUtilsForAndroid.TARMyApplication;
+
 /**
- * Created by TAR on 2017/11/7.
+ * Created by TAR on 2018/1/10.
  */
 
-public class TARBaseActivity extends AppCompatActivity {
+/**
+ * 基础BaseActivity
+ */
+public abstract class TARBaseActivity extends AppCompatActivity {
 
-    /*
-    * 初始化导航栏
-    * */
-    protected void initNavBar(){}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        TARMyApplication.getInstance().addActivity(this);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-    /*
-    * 初始化主 UI 视图
-    * */
-    protected void initMainUI() {}
-
-
+//        initMainView();
+//        requestMainData();
+    }
 
 
+    /**
+     * 初始化主 UI 视图
+     * */
+    public abstract void initMainView();
+
+    /**
+     * 请求数据
+     * */
+    public abstract void requestMainData();
 
 
 
 }
+
+
