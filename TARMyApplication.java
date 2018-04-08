@@ -8,7 +8,11 @@ import java.util.Stack;
 //import cn.jpush.android.api.JPushInterface;
 
 /**
+<<<<<<< HEAD
  * Created by Administrator on 2017/6/27..
+=======
+ * Created by Administrator on 2017/6/27.
+>>>>>>> a59e02eddbf0120abde6ce272946230beccd2653
  */
 
 public class TARMyApplication extends Application {
