@@ -3,7 +3,11 @@ package com.tar.ronghuibaoforandroid.TARUtilsForAndroid.TAR_UIKit;
 import android.os.Bundle;
 import android.webkit.WebView;
 
+<<<<<<< HEAD
 import com.tar.ronghuibaoforandroid.TARUtilsForAndroid.TARBaseKit.TARBaseActivity;
+=======
+import com.tar.ronghuibaoforandroid.Bases.TARBaseActivity;
+>>>>>>> 1e5c769ad367275f3697be5f1f2b1f5bd683ee3a
 
 /*
 *
